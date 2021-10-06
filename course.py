@@ -52,7 +52,7 @@ def create_outline():
     list_of_problems = ['Problem 1', 'Problem 2', 'Problem 3']
     student_names = [
         'Nyari', 
-        'Adam','
+        'Adam',
         'Siyabonga',
         'Nduduzo',
         'Sunshine',
