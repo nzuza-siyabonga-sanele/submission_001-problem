@@ -11,7 +11,15 @@ def create_outline():
     CREATED TWO LISTS OF COURSES AND USED SET TO PRINT(RANDOM)
     '''
     
-    list_of_Coures = [' Introduction to Python',' Tools of the Trade',' How to make decisions', ' How to repeat code',' How to structure data', ' Functions', ' Modules']
+    list_of_Coures = [
+        ' Introduction to Python',
+        ' Tools of the Trade',
+        ' How to make decisions', 
+        ' How to repeat code',
+        ' How to structure data', 
+        ' Functions', 
+        ' Modules'
+                    ]
     set_list = set(list_of_Coures)
     conv_back_to_list = list(set_list)
     sorted_list = sorted(conv_back_to_list)                                                        # STEP 4
@@ -21,7 +29,8 @@ def create_outline():
     
     # STEP 2
     '''
-    CREATED TWO LISTS OF PROBLEMS AND EMPTY DICT. FIRST LOOP FOR KEYS AND SECOND LOOP FOR VALUES IN THE EMPTY DICT
+    CREATED TWO LISTS OF PROBLEMS AND EMPTY DICT. 
+    FIRST LOOP FOR KEYS AND SECOND LOOP FOR VALUES IN THE EMPTY DICT
     '''
     set_of_problems = ['Problem 1,', ' Problem 2,', ' Problem 3']
     empty = {}
@@ -41,8 +50,22 @@ def create_outline():
     CREATED MY TWO LISTS OF STUDENTS AND SORTED-STATUS
     '''
     list_of_problems = ['Problem 1', 'Problem 2', 'Problem 3']
-    student_names = ['Nyari', 'Adam','Siyabonga','Nduduzo','Sunshine','Thabang']
-    status_list = ['[GRADED]','[STARTED]','[COMPLETED]','[GRADED]','[COMPLETED]','[GRADED]']   
+    student_names = [
+        'Nyari', 
+        'Adam','
+        'Siyabonga',
+        'Nduduzo',
+        'Sunshine',
+        'Thabang'
+        ]
+    status_list = [
+        '[GRADED]',
+        '[STARTED]',
+        '[COMPLETED]',
+        '[GRADED]',
+        '[COMPLETED]',
+        '[GRADED]'
+        ]   
     status_list.sort()                                                                            # STEP 4
       
     print('Student Progress:')
@@ -51,7 +74,8 @@ def create_outline():
     tuples_list = sorted(tuples_list, key=lambda tup: tup[3],reverse=True)  #
     counter = 1   
     '''
-    THIS BOTTOM PART OF THE CODE, I CREATED A TUPLE AND APPENED IT TO A LIST CALLED TUPLE_LIST
+    THIS BOTTOM PART OF THE CODE, 
+    I CREATED A TUPLE AND APPENED IT TO A LIST CALLED TUPLE_LIST
     '''
     for name in student_names:                                                                                         
         tupl = (name,random.choice(list_of_Coures),random.choice(list_of_problems),status_list.pop())
